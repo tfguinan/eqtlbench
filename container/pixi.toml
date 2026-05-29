@@ -79,7 +79,7 @@ make = "*"
 cmake = "*"
 
 [pypi-dependencies]
-memento-eqtl = "*"
+memento-de = "*"
 pydeseq2 = "*"
 
 [tasks]
