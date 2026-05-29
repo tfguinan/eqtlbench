@@ -13,7 +13,7 @@ RUN wget -q https://github.com/prefix-dev/pixi/releases/latest/download/pixi-x86
     && chmod +x /usr/local/bin/pixi
 
 COPY pixi.toml /benchmark/pixi.toml
-COPY pixi.lock /benchmark/pixi.lock
+# COPY pixi.lock /benchmark/pixi.lock
 
 WORKDIR /benchmark
 

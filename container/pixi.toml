@@ -1,4 +1,4 @@
-[project]
+[workspace]
 name = "eqtlbench"
 version = "0.1.0"
 description = "Benchmarking eQTL methods: Matrix-eQTL, SAIGE-QTL and Memento"
@@ -18,7 +18,7 @@ r-matrixeqtl = "*"
 saige-qtl = "*"
 
 # General R utilities
-r-data.table = "*"
+"r-data.table" = "*"
 r-optparse = "*"
 r-dplyr = "*"
 r-tidyr = "*"
