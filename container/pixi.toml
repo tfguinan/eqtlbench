@@ -14,9 +14,6 @@ r-devtools = "*"
 # Matrix-eQTL
 r-matrixeqtl = "*"
 
-# SAIGE-QTL
-saige-qtl = "*"
-
 # General R utilities
 "r-data.table" = "*"
 r-optparse = "*"

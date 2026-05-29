@@ -20,3 +20,16 @@ WORKDIR /benchmark
 RUN pixi install
 
 ENV PATH="/benchmark/.pixi/envs/default/bin:$PATH"
+
+# Install SAIGE-QTL from pre-built binary
+RUN git clone https://github.com/weizhou0/SAIGEQTL.git /opt/SAIGEQTL \
+    && cd /opt/SAIGEQTL \
+    && BINARY_FILE=$(ls binaries/SAIGEQTL_*_linux-x86_64.tgz | head -n1) \
+    && echo "Installing: $BINARY_FILE" \
+    && CONDA_OVERRIDE_GLIBC=2.28 pixi run R -e " \
+        install.packages('${BINARY_FILE}', repos = NULL, type = 'source') ; \
+        library(SAIGEQTL) ; \
+        cat('SAIGEQTL', as.character(packageVersion('SAIGEQTL')), 'installed\n') \
+    "
+
+ENV PATH="/opt/SAIGEQTL/extdata:${PATH}"
