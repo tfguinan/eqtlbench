@@ -41,7 +41,6 @@ r-spatest = "*"
 r-boot = "*"
 r-ggrepel = "*"
 r-rocr = "*"
-r-pcaforqtl = "*"
 
 # Bioconductor
 bioconductor-biocparallel = "*"
