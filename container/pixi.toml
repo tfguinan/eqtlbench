@@ -52,7 +52,6 @@ bioconductor-scater = "*"
 bioconductor-edger = "*"
 bioconductor-deseq2 = "*"
 bioconductor-variancepartition = "*"
-bioconductor-peer = "*"
 bioconductor-qvalue = "*"
 
 # Python
