@@ -17,7 +17,7 @@ COPY pixi.toml /benchmark/pixi.toml
 
 WORKDIR /benchmark
 
-RUN pixi install
+RUN pixi install && pixi run install-PCAForQTL
 
 ENV PATH="/benchmark/.pixi/envs/default/bin:$PATH"
 

@@ -82,3 +82,6 @@ cmake = "*"
 [pypi-dependencies]
 memento-eqtl = "*"
 pydeseq2 = "*"
+
+[tasks]
+install-PCAForQTL = "Rscript -e \"devtools::install_github('heatherjzhou/PCAForQTL')\""
