@@ -1,0 +1,87 @@
+[project]
+name = "eqtlbench"
+version = "0.1.0"
+description = "Benchmarking eQTL methods: Matrix-eQTL, SAIGE-QTL and Memento"
+channels = ["conda-forge", "bioconda"]
+platforms = ["linux-64"]
+
+[dependencies]
+# R
+r-base = "4.4.*"
+r-remotes = "*"
+r-devtools = "*"
+
+# Matrix-eQTL
+r-matrixeqtl = "*"
+
+# SAIGE-QTL
+saige-qtl = "*"
+
+# General R utilities
+r-data.table = "*"
+r-optparse = "*"
+r-dplyr = "*"
+r-tidyr = "*"
+r-ggplot2 = "*"
+r-patchwork = "*"
+r-scales = "*"
+
+# SAIGE-QTL dependencies
+r-rcpp = "*"
+r-rcpparmadillo = "*"
+r-rcppparallel = "*"
+r-rcppeigen = "*"
+r-matrix = "*"
+r-mass = "*"
+r-nlme = "*"
+r-rhpcblasctl = "*"
+r-rsqlite = "*"
+r-skat = "*"
+r-bh = "*"
+r-furrr = "*"
+r-dbplyr = "*"
+r-spatest = "*"
+r-qvalue = "*"
+r-boot = "*"
+r-ggrepel = "*"
+r-rocr = "*"
+
+# Bioconductor
+bioconductor-biocparallel = "*"
+bioconductor-summarizedexperiment = "*"
+bioconductor-singlecellexperiment = "*"
+bioconductor-scran = "*"
+bioconductor-scater = "*"
+bioconductor-edger = "*"
+bioconductor-deseq2 = "*"
+bioconductor-variancepartition = "*"
+bioconductor-peer = "*"
+
+# Python
+python = "3.10.*"
+pip = "*"
+scanpy = "*"
+anndata = "*"
+mudata = "*"
+pandas = "*"
+numpy = "*"
+scipy = "*"
+statsmodels = "*"
+matplotlib = "*"
+seaborn = "*"
+
+# Genotype tools
+plink = "*"
+plink2 = "*"
+bcftools = "*"
+htslib = "*"
+popscle = "*"
+
+# System / build
+gcc = "*"
+make = "*"
+cmake = "*"
+
+[pypi-dependencies]
+memento-eqtl = "*"
+pydeseq2 = "*"
